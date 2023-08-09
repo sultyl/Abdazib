@@ -1,18 +1,3 @@
 {
-    "builds": [
-      { "src": "server/pages/index.js", "use": "@vercel/node" },
-      { "src": "instant-c/package.json", "use": "@vercel/next" }
-    ],
-    "routes": [
-      { "src": "/api/(.*)", "dest": "server/pages/index.js" },
-      { "src": "/(.*)", "dest": "instant-c/$1" }
-    ],
-    "build": {
-        "command": "npm install --legacy-peer-deps && npm run build",
-        "env": {
-          "NODE_OPTIONS": "--max-old-space-size=1024"
-        },
-        "src": "instant-c",   
-        "use": "@vercel/next"
-      }
+    "buildCommand": "next build"
   }
