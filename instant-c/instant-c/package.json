@@ -1,0 +1,34 @@
+{
+  "name": "instant-c",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/is-prop-valid": "^1.2.1",
+    "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.10",
+    "mongoose": "^7.4.1",
+    "next": "^13.4.13-canary.18",
+    "postcss": "8.4.26",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-naira": "^1.2.1",
+    "react-native-animated-emoji": "^0.1.4",
+    "react-paystack": "^4.0.3",
+    "stripe": "^12.16.0",
+    "styled-components": "^6.0.5",
+    "stylis-plugin-rtl": "^2.0.2",
+    "tailwindcss": "3.3.3",
+    "tslib": "^2.6.1"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.8.0"
+  }
+}
