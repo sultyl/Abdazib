@@ -1,10 +1,8 @@
 {
-    "builds": [
-      { "src": "server/pages/index.js", "use": "@vercel/node" },
-      { "src": "instant-c/package.json", "use": "@vercel/next" }
-    ],
-    "routes": [
-      { "src": "/api/(.*)", "dest": "server/pages/index.js" },
-      { "src": "/(.*)", "dest": "instant-c/$1" }
+    "rewrites": [
+        {
+            "source": "/server/(.*)",
+            "destination": "/server/pages"
+        }
     ]
   }
